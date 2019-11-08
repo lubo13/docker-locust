@@ -1,0 +1,22 @@
+version: '3.2'
+services:
+  # Locust
+  locust:
+    container_name: locust
+    build:
+      context: ./build
+    command: ${WEBSITE_DOMAIN}
+    restart: on-failure
+    networks:
+      - backend
+    ports:
+      - "8089:8089"
+    expose:
+      - "8089"
+    volumes:
+      - ./links/:/var/www/links
+    env_file:
+      - ./.env
+
+networks:
+  backend:
