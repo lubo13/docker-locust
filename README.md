@@ -18,7 +18,7 @@ This README would normally document whatever steps are necessary to get your app
 * Edit urls in ./links.links.py with your urls for test
 * Edit WEBSITE_DOMAIN in .env with domain for that you want to make stress test
 * $ sudo docker-compose up -d
-* Type in browser -> http://localhost:8089
+* Type in browser -> http://localhost:9999
 * $ sudo docker-compose down
 * $ sudo service docker stop
 

@@ -9,9 +9,9 @@ services:
     networks:
       - backend
     ports:
-      - "8089:8089"
+      - "9999:8089"
     expose:
-      - "8089"
+      - "9999"
     volumes:
       - ./links/:/var/www/links
     env_file:
